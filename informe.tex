@@ -1,0 +1,111 @@
+%Preambulo
+\documentclass[letterpaper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+\usepackage{calc}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{gensymb}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+\setmarginsrb{3 cm}{2.5 cm}{3 cm}{2.5 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Portada
+\title{Informe de Avance V 1.0}					
+\author{Sebastián de Pablo
+- Nicolás Diaz
+- Israel Osorio
+- Felipe Leiva
+}
+\date{\today}
+
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\theauthor}
+\lhead{\thetitle}
+\cfoot{\thepage}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+    \vspace*{0.0 cm}
+
+%Imagen o logo de portada
+\includegraphics[scale = 0.13]{Logo_DuocUC.png}\\[1.0 cm]	
+\textsc{\LARGE Instituto profesional DUOC UC}\\[2.0 cm]	
+	\textsc{\Large DEY3101-002D}\\[0.5 cm]				
+	\textsc{\large Desarrollo de software escritorio y gestión}\\[0.5 cm]	
+	\rule{\linewidth}{0.2 mm} \\[0.4 cm]
+	{ \huge \bfseries \thetitle}\\
+	\rule{\linewidth}{0.2 mm} \\[1.5 cm]
+	
+	\begin{minipage}{0.4\textwidth}
+		\begin{center} \large
+			\emph{Autor:}\\
+			\theauthor\linebreak
+			\end{center}
+	\end{minipage}\\[2 cm]
+	
+	{\large \thedate}\\[2 cm]
+ 
+	\vfill
+	
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Indice
+
+\tableofcontents
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Contenido del informe
+\section{Introducción}
+Por encargo de la empresa Seguros BeLife se necesita desarrollar un software que manipule los datos de contratos de seguro y clientes por medio de una interfaz acorde a los pedidos del cliente. Con esto la empresa buscar actualizar su plataforma para entregar un mejor servicios beneficiándose del programa.
+\section{Introducción}
+Por encargo de la empresa Seguros BeLife se necesita desarrollar un software que manipule los datos de contratos de seguro y clientes por medio de una interfaz acorde a los pedidos del cliente. Con esto la empresa buscar actualizar su plataforma para entregar un mejor servicios beneficiándose del programa.
+\section{Contexto}
+Se necesita una plataforma acorde a los estándares actuales para operar la gestión de contratos de seguros mediante 2 módulos.
+
+\section{Requerimientos}
+Se debe permitir registro y actualización de los clientes y contratos de seguros por medio del software.
+El software tiene que tener una estética acorde a la visual de la compañía.
+Además el cliente entrega un manifiesto con reglas de negocios.
+
+\section{Implementación}
+El programa será implementado para ser un software para computadora en un comienzo.
+
+Se empleara SQL Server para manipular la Base de datos.
+
+Se utilizara el lenguaje de programación C Sharp para crear el programa.
+
+Se validaran los campos en el programa  acorde a las reglas de negocio.
+
+El proyecto estará bajo el paradigma de la programación orientada a objeto.
+
+
+\section{Mockups}
+\includegraphics[scale = 0.7]{1-inicio.png}\\[1.0 cm]
+\includegraphics[scale = 0.7]{2-addcontrato.png}\\[1.0 cm]
+\includegraphics[scale = 0.7]{3-addcliente.png}\\[1.0 cm]
+\includegraphics[scale = 0.7]{4-cliente.png}\\[1.0 cm]
+\includegraphics[scale = 0.7]{5-contrato.png}\\[1.0 cm]
+\includegraphics[scale = 0.7]{6-listadocliente.png}\\[1.0 cm]
+\includegraphics[scale = 0.7]{7-listadocontrato.png}\\[1.0 cm]
+\end{document}
